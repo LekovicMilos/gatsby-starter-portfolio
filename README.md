@@ -7,6 +7,10 @@
   Portfolio website built in Gatsby
 </h1>
 
+<a href="https://relaxed-bhaskara-5abd0a.netlify.com/" target="_blank">
+  Preview live version
+</a>
+
 Kick off your portfolio website with this default boilerplate. This barebones starter ships with the main portfolio items you might need. 
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
