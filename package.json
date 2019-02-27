@@ -1,0 +1,49 @@
+{
+  "name": "portfolio-website-gatsby",
+  "description": "Portfolio website built in Gatsby",
+  "version": "1.0.0",
+  "author": "Milos Lekovic <milos085@gmail.com>",
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.8.0",
+    "gatsby": "^2.0.40",
+    "gatsby-image": "^2.0.20",
+    "gatsby-plugin-manifest": "^2.0.7",
+    "gatsby-plugin-offline": "^2.0.12",
+    "gatsby-plugin-react-helmet": "^3.0.1",
+    "gatsby-plugin-sharp": "^2.0.12",
+    "gatsby-plugin-styled-components": "^3.0.1",
+    "gatsby-react-router-scroll": "^2.0.1",
+    "gatsby-source-filesystem": "^2.0.7",
+    "gatsby-transformer-sharp": "^2.1.8",
+    "husky": "^1.1.4",
+    "polished": "^2.3.0",
+    "pretty-quick": "^1.8.0",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^4.0.3",
+    "styled-props": "^1.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write '**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.15.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  }
+}
