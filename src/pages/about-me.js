@@ -5,7 +5,7 @@ import * as t from '../Typography';
 import Layout, { Content } from '../components/Layout';
 import HireMePopup from '../components/HireMePopup.js';
 import { media } from '../MediaQueries';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { graphql } from 'gatsby';
 
 const AboveFold = styled.div`
@@ -91,7 +91,7 @@ class AboutMe extends React.Component {
             </t.LargeP>
           </AboveFold>
           <Content>
-            <Img fluid={data.avatarAbout.childImageSharp.fluid} alt="Name Surname" className="avatar" />
+            <GatsbyImage image={getImage(data.avatarAbout)} alt="Name Surname" className="avatar" />
           </Content>
         </Layout>
         <HireMePopup open={openHireMePopup} handleClose={this.handleRequestDemoClose} />
@@ -105,7 +105,9 @@ export default AboutMe;
 export const pageQuery = graphql`
   query {
     avatarAbout: file(relativePath: { eq: "avatar.jpg" }) {
-      ...fluidImage
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
     }
   }
 `;

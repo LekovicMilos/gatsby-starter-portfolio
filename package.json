@@ -1,27 +1,27 @@
 {
   "name": "portfolio-website-gatsby",
   "description": "Portfolio website built in Gatsby",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "Milos Lekovic <milos085@gmail.com>",
   "dependencies": {
-    "babel-plugin-styled-components": "^1.8.0",
-    "gatsby": "^2.0.40",
-    "gatsby-image": "^2.0.20",
-    "gatsby-plugin-manifest": "^2.0.7",
-    "gatsby-plugin-offline": "^2.0.12",
-    "gatsby-plugin-react-helmet": "^3.0.1",
-    "gatsby-plugin-sharp": "^2.0.12",
-    "gatsby-plugin-styled-components": "^3.0.1",
-    "gatsby-react-router-scroll": "^2.0.1",
-    "gatsby-source-filesystem": "^2.0.7",
-    "gatsby-transformer-sharp": "^2.1.8",
-    "husky": "^1.1.4",
-    "polished": "^2.3.0",
-    "pretty-quick": "^1.8.0",
-    "react": "^16.6.1",
-    "react-dom": "^16.6.1",
-    "react-helmet": "^5.2.0",
-    "styled-components": "^4.0.3",
+    "babel-plugin-styled-components": "^2.1.4",
+    "gatsby": "^5.15.0",
+    "gatsby-plugin-image": "^3.15.0",
+    "gatsby-plugin-manifest": "^5.15.0",
+    "gatsby-plugin-offline": "^6.15.0",
+    "gatsby-plugin-react-helmet": "^6.15.0",
+    "gatsby-plugin-sharp": "^5.15.0",
+    "gatsby-plugin-styled-components": "^6.15.0",
+    "gatsby-react-router-scroll": "^6.15.0",
+    "gatsby-source-filesystem": "^5.15.0",
+    "gatsby-transformer-sharp": "^5.15.0",
+    "husky": "^9.1.7",
+    "polished": "^4.3.1",
+    "pretty-quick": "^4.2.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.3.11",
     "styled-props": "^1.1.2"
   },
   "husky": {
@@ -40,7 +40,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.15.1"
+    "prettier": "^3.7.3"
   },
   "repository": {
     "type": "git",

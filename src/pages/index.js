@@ -8,7 +8,7 @@ import { HireMe, LinkButton } from '../components/Button.js';
 import HireMePopup from '../components/HireMePopup.js';
 import { media } from '../MediaQueries';
 import Colors from '../Colors';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { graphql } from 'gatsby';
 import { darken } from 'polished';
 
@@ -144,7 +144,7 @@ class Homepage extends React.Component {
       <HomepageWrapper>
         <Layout theme="white" bigFooter openContactPopup={this.openContactPopup}>
           <AboveFold>
-            <Img fluid={data.avatarHomepage.childImageSharp.fluid} alt="Name Surname" className="avatar" />
+            <GatsbyImage image={getImage(data.avatarHomepage)} alt="Name Surname" className="avatar" />
             <t.H1 primary align="center">
               Name Surname
             </t.H1>
@@ -255,7 +255,9 @@ export default Homepage;
 export const pageQuery = graphql`
   query {
     avatarHomepage: file(relativePath: { eq: "avatar.jpg" }) {
-      ...fluidImage
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
     }
   }
 `;
